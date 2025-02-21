@@ -3,15 +3,15 @@ class c203:
     course='PFS'
     TIMING='4.30'
     BATCH="M17"
-sindhiya=c203()
+sandhya=c203()
 #object access
-print(sindhiya.course)
+print(sandhya.course)
 #CLASS ACCESS
 print(c203.BATCH)
 #MODIFYIING THE CLASS AND OBJECT
-sindhiya.TIMING="4.00"
-print(sindhiya.TIMING)
+sandhya.TIMING="4.00"
+print(sandhya.TIMING)
 print(c203.TIMING)
 c203().TIMING="5.00"
 print(c203.TIMING)
-print(sindhiya.TIMING)
+print(sandhya.TIMING)
