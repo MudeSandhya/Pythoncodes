@@ -15,12 +15,12 @@ if num!=res:
             if res>1:
                 for val in range(2,res//2+1):
                     if res%val==0:
-                        print("no EMIPR")
+                        print("no EMIRP")
                         break
                 else:
-                    print("emipr")
+                    print("emirp")
 else:
-    print("no emipr")
+    print("no emirp")
 """
 def prime(num,val=2):
     if num<=1:
@@ -34,17 +34,17 @@ def reverse(num,result=0):
     if num==0:
         return result
     return reverse(num//10,result*10+num%10)
-def emipr(num):
+def emirp(num):
     rev=reverse(num)
     if rev==num:
-        return "no emipr"
+        return "no emirp"
     if prime(num) and prime(rev):
-        return "emipr"
+        return "emirp"
     else:
-        return "no emipr"
+        return "no emirp"
 num=int(input())
 print(reverse(num))
-print(emipr(num))
+print(emirp(num))
 
                             
                     
