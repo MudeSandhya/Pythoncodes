@@ -29,7 +29,7 @@ class B(A):
         super().__init__(name,mob)
         self.aadhar=aadhar
         self.pan=pan
-obj=B("sindhiya",7548819758,"ASDT45667345",6789567)
+obj=B("sandhya",7548819758,"ASDT45667345",6789567)
 print(obj.mob)
 print(obj.name)
       #class chaining
@@ -38,12 +38,12 @@ class c:
         self.name=name
         self.mob=mob
 class D(C):
-    def __init__(self,name,mob,adhar,pan):
+    def __init__(self,name,mob,aadhar,pan):
         C.__init__(self)
-        self.adhar=adhar
+        self.aadhar=aadhar
         self.pan=pan
-obj=D("sindhiya",7548819758,"ADUCGD456","PAND34568D")
-print(obj.adhar)
+obj=D("sandhya",7548819758,"ADUCGD456","PAND34568D")
+print(obj.aadhar)
 class student:
     def __init__(self,name,phno):
         self.name=name
@@ -52,7 +52,7 @@ class scoredetail(student):
     def __init__(self,name,phno,score):
         super().__init__(name,phno)
         self.score=score
-obj=scoredetail('sindhiya',7548819758,99)
+obj=scoredetail('sandhya',7548819758,99)
 print(obj.phno)"""
 class student():
     def __init__(self,name,phno,course):
@@ -78,7 +78,7 @@ class studentdetails(update):
     def detail(self):
         super().detail()
         print(f'time {self.time}')
-obj=studentdetails("sindhiya",7548869758,"pfs","p1","11.00")
+obj=studentdetails("sandhya",7548869758,"pfs","p1","11.00")
 obj.detail()
             
 
